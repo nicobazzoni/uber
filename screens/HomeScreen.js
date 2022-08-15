@@ -5,7 +5,7 @@ import NavOptions from '../components/NavOptions'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from 'react-redux'
-import { setOrigin , setDestination } from'../slices/navSlice'
+import { setOrigin, setDestination } from '../slices/navSlice'
 
 const HomeScreen = () => {    
     const dispatch = useDispatch() // dispatch communicates data to and fro redux

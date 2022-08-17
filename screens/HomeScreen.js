@@ -59,6 +59,7 @@ const HomeScreen = () => {
         }}
         nearbyPlacesAPI="GooglePlacesSearch"
         debounce={400} //waits to execute search for 400 miliseconds
+      
         />
 
         <NavOptions />

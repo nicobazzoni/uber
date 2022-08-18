@@ -7,6 +7,7 @@ import { selectOrigin , selectDestination } from '../slices/navSlice'
 
 import MapViewDirections from 'react-native-maps-directions'
 import { GOOGLE_MAPS_APIKEY } from "@env";
+
 const Map = () => {
 
   const origin = useSelector(selectOrigin) 
@@ -22,7 +23,9 @@ const Map = () => {
   },[origin, destination]); 
 
   return (
+
     <MapView 
+    ref={mapRef}
     style={tw`flex-1`}
     mapType="mutedStandard"
     initialRegion={{
@@ -40,8 +43,8 @@ const Map = () => {
       strokeWidth={3}
       strokeColor="hotpink"
       />
+      )}
 
-    )}
     {origin?.location && (
         <Marker 
         coordinate={{

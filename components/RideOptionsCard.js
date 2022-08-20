@@ -74,7 +74,7 @@ const RideOptionsCard = () => {
               <Text style={tw`text-xl font-semibold`} >{title}</Text>
               <Text>{travelTimeInformation?.duration.text} travel time</Text>
             </View>
-            <Text style={tw `text-xl`}> 
+            <Text style={tw `text-xs`}> 
             {new Intl.NumberFormat('en-US', {
               style: 'currency',
               currency: 'USD',

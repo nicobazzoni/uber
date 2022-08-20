@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 import { setDestination } from '../slices/navSlice'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import { Icon} from 'react-native-elements'
+import { Icon } from 'react-native-elements'
 import NavFavorites from './NavFavorites'
 
 const NavigateCard = () => {
